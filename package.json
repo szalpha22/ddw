@@ -1,0 +1,50 @@
+{
+  "name": "titan-ultra-ai-system",
+  "version": "1.0.0",
+  "description": "TITAN++ Ultra - Autonomous AI Development System powered by DeepSeek Coder",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "ui": "cd ui && npm run dev",
+    "sandbox": "docker-compose up -d",
+    "sandbox:down": "docker-compose down",
+    "test": "node dist/core/sandbox/executor.js"
+  },
+  "keywords": ["ai", "autonomous", "deepseek", "code-generation", "multi-agent"],
+  "author": "TITAN++ System",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.1",
+    "diff": "^5.1.0",
+    "fast-diff": "^1.3.0",
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "@babel/types": "^7.23.0",
+    "esprima": "^4.0.1",
+    "acorn": "^8.10.0",
+    "acorn-walk": "^8.2.0",
+    "ts-morph": "^20.0.0",
+    "jscodeshift": "^0.15.0",
+    "glob": "^10.3.10",
+    "ignore": "^5.2.4",
+    "markdown-it": "^13.0.2",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/express": "^4.17.20",
+    "@types/ws": "^8.5.8",
+    "@types/diff": "^5.0.7",
+    "@types/uuid": "^9.0.6",
+    "@types/cors": "^2.8.15",
+    "typescript": "^5.2.2",
+    "tsx": "^4.0.0"
+  }
+}
